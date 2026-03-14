@@ -1,0 +1,14 @@
+{
+  "owner": {
+    "id": "owner",
+    "name": "FuelStation",
+    "balance": 100.15,
+    "address": "0x64cEc7C055C1Ac12096aB2fb6D67288797326120"
+  },
+  "priyanshuraj7590@gmail.com": {
+    "id": "priyanshuraj7590@gmail.com",
+    "name": "priyanshuraj7590@gmail.com",
+    "balance": 49.85,
+    "address": "0x63539ABF4e82233B3545c7be7E70bFA04A84AC31"
+  }
+}

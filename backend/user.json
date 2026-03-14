@@ -1,0 +1,41 @@
+{
+  "owner": {
+    "id": "owner",
+    "name": "FuelStation",
+    "balance": 122.795,
+    "address": "0xaBbACadABa000000000000000000000000000000"
+  },
+  "pk75": {
+    "id": "pk75",
+    "name": "pk75",
+    "balance": 50.0,
+    "address": "0xaBbACaDaBA000000000000000000000000000001"
+  },
+  "pk123": {
+    "id": "pk123",
+    "name": "pk123",
+    "balance": 48.68,
+    "address": "0xAbbAcaDaBA000000000000000000000000000002"
+  },
+  "priyanshu": {
+    "id": "priyanshu",
+    "name": "priyanshu",
+    "balance": 31.175,
+    "address": "0xabBACadaBA000000000000000000000000000003",
+    "password_hash": "8bb0cf6eb9b17d0f7d22b456f121257dc1254e1f01665370476383ea776df414"
+  },
+  "raag": {
+    "id": "raag",
+    "name": "raag",
+    "balance": 47.35,
+    "address": "0xabbAcADABa000000000000000000000000000004",
+    "password_hash": "8bb0cf6eb9b17d0f7d22b456f121257dc1254e1f01665370476383ea776df414"
+  },
+  "Nimrat": {
+    "id": "Nimrat",
+    "name": "Nimrat",
+    "balance": 50.0,
+    "address": "0xaBBACADABA000000000000000000000000000005",
+    "password_hash": "f28dbf54044f6cbe382e756f6d656c675c5abfc1c45545551d360f6121821f2d"
+  }
+}
