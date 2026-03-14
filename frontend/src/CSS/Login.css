@@ -1,0 +1,220 @@
+
+
+.login-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: 
+    linear-gradient(135deg, rgba(114, 211, 92, 0.094), rgba(0, 0, 0, 0.34)),
+    url("https://png.pngtree.com/thumb_back/fh260/background/20230707/pngtree-green-background-with-electric-car-charging-battery-3d-rendered-power-source-image_3818491.jpg");
+  background-size: cover;
+  background-position: center;
+  font-family: "Poppins", sans-serif;
+  animation: fadeInBg 1.2s ease-in-out;
+}
+
+.login-card {
+  background-color: #ffffff;
+  padding: 40px 35px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  width: 380px;
+  position: relative;
+  animation: fadeInCard 0.8s ease-in-out forwards;
+  transform: translateY(20px);
+  opacity: 0;
+}
+
+@keyframes fadeInCard {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInBg {
+  from {
+    opacity: 0.3;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.login-card h2 {
+  margin-bottom: 20px;
+  color: #333;
+  font-weight: 600;
+}
+
+
+.face {
+  position: relative;
+  width: 110px;
+  height: 110px;
+  background: radial-gradient(circle at 35% 35%, #ffe082, #ffca28);
+  border-radius: 50%;
+  margin: 0 auto 25px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  animation: faceBounce 3s infinite ease-in-out;
+}
+
+
+.eye {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background: #333;
+  border-radius: 50%;
+  top: 40px;
+  transition: all 0.3s ease;
+  animation: blink 5s infinite;
+}
+
+.eye.left {
+  left: 30px;
+}
+
+.eye.right {
+  right: 30px;
+}
+
+@keyframes blink {
+  0%, 90%, 100% { height: 16px; }
+  95% { height: 3px; }
+}
+
+
+.mouth {
+  position: absolute;
+  width: 50px;
+  height: 25px;
+  border-bottom: 4px solid #333;
+  border-radius: 0 0 50px 50px;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all 0.3s ease;
+}
+
+
+.hand {
+  position: absolute;
+  width: 65px;
+  height: 65px;
+  background: radial-gradient(circle at 40% 20%, #ffcc33, #f4b400);
+  border-radius: 50px;
+  top: 25px;
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  transform-origin: top center;
+  box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.1);
+}
+
+.hand.left {
+  left: -5px;
+  transform: rotate(15deg);
+}
+
+.hand.right {
+  right: -5px;
+  transform: rotate(-15deg);
+}
+
+
+.password-focus .hand.left {
+  transform: rotate(160deg) translate(15px, -10px);
+}
+
+.password-focus .hand.right {
+  transform: rotate(-160deg) translate(-15px, -10px);
+}
+
+
+.password-focus .eye {
+  width: 22px;
+  height: 4px;
+  top: 45px;
+  background: #333;
+  border-radius: 50%;
+  animation: none;
+}
+
+.password-focus .mouth {
+  width: 28px;
+  height: 14px;
+  border-bottom: 3px solid #333;
+  border-radius: 50%;
+  bottom: 35px;
+  transform: translateX(-50%) rotate(180deg);
+}
+
+
+@keyframes faceBounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-3px); }
+}
+
+
+.login-input {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 15px;
+  border: 1.5px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  transition: all 0.2s ease;
+  margin-left: -17px;
+}
+
+.login-input:focus {
+  border-color: #007aff;
+  box-shadow: 0 0 5px rgba(0, 122, 255, 0.3);
+  outline: none;
+}
+
+
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.primary-btn {
+  background-color: #007aff;
+  color: white;
+}
+
+.primary-btn:hover {
+  background-color: #005fd1;
+  transform: scale(1.05);
+}
+
+.secondary-btn {
+  background-color: #e0e0e0;
+  color: #333;
+}
+
+.secondary-btn:hover {
+  background-color: #cfcfcf;
+  transform: scale(1.05);
+}
+
+@media (max-width: 480px) {
+  .login-card {
+    width: 90%;
+    padding: 30px 20px;
+  }
+}

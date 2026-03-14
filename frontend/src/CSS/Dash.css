@@ -1,0 +1,114 @@
+.dashboard-container {
+  max-width: 1100px;
+  margin: auto;
+  padding-bottom: 40px;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.dashboard-container h2 {
+  color: #007aff;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.dashboard-container p {
+  font-size: 15px;
+  color: #333;
+}
+
+.blockchain-container {
+  padding: 15px 0;
+}
+
+.block {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.block:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.28);
+}
+
+.block::after {
+  transition: background-color 0.3s;
+}
+
+.info-box {
+  animation: pop 0.25s ease-out;
+}
+
+@keyframes pop {
+  from { transform: translate(-50%, 10px); opacity: 0; }
+  to   { transform: translate(-50%, 0); opacity: 1; }
+}
+
+button {
+  transition: background-color 0.25s ease, transform 0.2s ease;
+}
+
+button:hover {
+  transform: scale(1.04);
+}
+
+button[style*="tomato"]:hover {
+  background-color: #e63939 !important;
+}
+
+input[type="number"],
+input[type="text"] {
+  outline: none;
+  border: 1px solid #bbb;
+  transition: 0.2s;
+}
+
+input[type="number"]:focus,
+input[type="text"]:focus {
+  border-color: #007aff;
+  box-shadow: 0 0 4px rgba(0, 122, 255, 0.4);
+}
+
+.dashboard-container > div {
+  animation: softPop 0.25s ease-in-out;
+}
+
+@keyframes softPop {
+  from { opacity: 0; transform: scale(0.98); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+@media (max-width: 768px) {
+  .dashboard-container {
+    padding: 15px;
+  }
+
+  .block {
+    width: 80px !important;
+    height: 80px !important;
+    font-size: 13px;
+  }
+
+  .info-box {
+    min-width: 180px !important;
+  }
+
+  button {
+    padding: 8px 14px;
+    font-size: 14px;
+  }
+}
+
+.map-container {
+  margin-top: 30px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+.blockchain-container::-webkit-scrollbar {
+  display: none;
+}
